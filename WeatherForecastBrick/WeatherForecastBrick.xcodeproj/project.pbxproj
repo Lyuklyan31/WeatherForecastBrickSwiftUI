@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		046574C72CD7EB74001E6A0B /* WeatherForecastBrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForecastBrick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		046574C72CD7EB74001E6A0B /* WeatherForecastBrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WeatherForecastBrick.app; path = "/Users/mac/Desktop/WeatherForecastBrickSwiftUI/WeatherForecastBrick/build/Debug-iphoneos/WeatherForecastBrick.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		043269522CD995260044D249 /* Exceptions for "WeatherForecastBrick" folder in "WeatherForecastBrick" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 046574C62CD7EB74001E6A0B /* WeatherForecastBrick */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		046574C92CD7EB74001E6A0B /* WeatherForecastBrick */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				043269522CD995260044D249 /* Exceptions for "WeatherForecastBrick" folder in "WeatherForecastBrick" target */,
+			);
 			path = WeatherForecastBrick;
 			sourceTree = "<group>";
 		};
@@ -33,16 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				046574C92CD7EB74001E6A0B /* WeatherForecastBrick */,
-				046574C82CD7EB74001E6A0B /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		046574C82CD7EB74001E6A0B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				046574C72CD7EB74001E6A0B /* WeatherForecastBrick.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +99,7 @@
 			mainGroup = 046574BE2CD7EB74001E6A0B;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 046574C82CD7EB74001E6A0B /* Products */;
+			productRefGroup = 046574BE2CD7EB74001E6A0B;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -255,6 +259,7 @@
 				DEVELOPMENT_TEAM = 6D4397MTLK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherForecastBrick/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +289,7 @@
 				DEVELOPMENT_TEAM = 6D4397MTLK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeatherForecastBrick/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
