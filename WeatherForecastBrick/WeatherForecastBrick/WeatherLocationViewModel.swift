@@ -7,13 +7,12 @@ import CoreLocation
 class WeatherLocationViewModel: NSObject, ObservableObject {
     
     // MARK: - City
-    struct City: Hashable, Equatable {
+    struct City: Hashable, Equatable, Identifiable {
         var cityName = ""
         var countryName = ""
         var latitude = 0.0
         var longitude = 0.0
         var id = UUID()
-        var isSelected = false
         
         // MARK: Equatable
         static func == (lhs: City, rhs: City) -> Bool {
@@ -38,7 +37,7 @@ class WeatherLocationViewModel: NSObject, ObservableObject {
     
     // MARK: - Location Manager
     private let locationManager = CLLocationManager()
-    
+  
     // MARK: - Data Properties
     @Published private(set) var cities = [City]()
     
@@ -70,9 +69,6 @@ class WeatherLocationViewModel: NSObject, ObservableObject {
     
     // MARK: - Update Selected City
     func updateSelectedCity(at index: Int) {
-        cities.indices.forEach { cities[$0].isSelected = false }
-        
-        cities[index].isSelected = true
         city = cities[index]
     }
     
@@ -146,7 +142,7 @@ class WeatherLocationViewModel: NSObject, ObservableObject {
         }
         
         setupLocationManager()
-//        Task { await getWeather() }
+        Task { await getWeather() }
     }
     
     // MARK: - Location Manager Setup
