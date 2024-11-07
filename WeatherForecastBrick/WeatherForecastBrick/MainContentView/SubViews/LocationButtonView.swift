@@ -1,5 +1,6 @@
 import SwiftUI
 
+// MARK: - LocationButtonView
 struct LocationButtonView: View {
     var viewModel: WeatherLocationViewModel
     var action: () -> Void
@@ -13,7 +14,6 @@ struct LocationButtonView: View {
                 Text("\(viewModel.city.cityName), \(viewModel.city.countryName)")
                     .foregroundColor(.black)
                     .font(Font.custom("Ubuntu-Bold", size: 17))
-                    .lineLimit(0)
                 
                 Image(.magnifyingGlass)
                     .padding(.leading, 5)

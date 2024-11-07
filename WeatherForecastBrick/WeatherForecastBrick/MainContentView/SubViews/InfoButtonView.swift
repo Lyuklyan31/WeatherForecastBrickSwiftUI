@@ -7,7 +7,7 @@ struct InfoButtonView: View {
         Button(action: action) {
             Rectangle()
                 .frame(width: 175, height: 65)
-                .clipShape(RoundedCorners(corners: [.topLeft, .topRight], radius: 20))
+                .clipShape(RoundedCorners(corners: [.topLeft, .topRight], radius: 10))
                 .foregroundStyle(LinearGradient(gradient: Gradient(colors: [Color.orangeTop, Color.orangeBottom]), startPoint: .top, endPoint: .bottom))
                 .overlay {
                     Text("INFO")
