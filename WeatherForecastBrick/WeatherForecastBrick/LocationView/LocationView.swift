@@ -1,21 +1,22 @@
-//
-//  LocationView.swift
-//  WeatherForecastBrick
-//
-//  Created by Mac on 05.11.2024.
-//
-
 import SwiftUI
 
+// MARK: - LocationView
 struct LocationView: View {
-    
-    @ObservedObject var viewModel = WeatherLocationViewModel()
-    
+    @StateObject var viewModel: WeatherLocationViewModel
+    @Environment(\.dismiss) var dismiss
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            
+            // MARK: - Text Field View
+            TextFieldView(viewModel: viewModel)
+            
+            // MARK: - City Button View
+            CitiesListView(viewModel: viewModel)
+            
+            Spacer()
+        }
+        .ignoresSafeArea()
     }
 }
 
-#Preview {
-    LocationView()
-}

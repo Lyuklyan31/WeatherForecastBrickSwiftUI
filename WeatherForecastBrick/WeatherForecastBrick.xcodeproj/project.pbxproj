@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		046574C72CD7EB74001E6A0B /* WeatherForecastBrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WeatherForecastBrick.app; path = "/Users/mac/Desktop/WeatherForecastBrickSwiftUI/WeatherForecastBrick/build/Debug-iphoneos/WeatherForecastBrick.app"; sourceTree = "<absolute>"; };
+		04D4F5EB2CDAFBFE0074AD2B /* WeatherForecastBrick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForecastBrick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -46,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				046574C92CD7EB74001E6A0B /* WeatherForecastBrick */,
+				04D4F5EB2CDAFBFE0074AD2B /* WeatherForecastBrick.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +72,7 @@
 			packageProductDependencies = (
 			);
 			productName = WeatherForecastBrick;
-			productReference = 046574C72CD7EB74001E6A0B /* WeatherForecastBrick.app */;
+			productReference = 04D4F5EB2CDAFBFE0074AD2B /* WeatherForecastBrick.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
